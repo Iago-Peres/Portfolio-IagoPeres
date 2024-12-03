@@ -1,0 +1,117 @@
+* {
+    padding: 4px;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    background-color: rgb(15, 15, 20);
+}
+
+header {
+    display: flex;
+    flex-direction: column wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    padding: 1%;
+    gap: 5%;
+    border-radius: 10px;
+    background-color: rgb(30, 30, 40);
+    color: rgb(200, 200, 200);
+}
+
+#menu-div {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: baseline;
+    flex: 1;
+    background-color: #003E8B;
+    border-radius: 10px;
+    padding: 1%;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.541);
+}
+
+nav menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    list-style-type: none;
+    gap: 5%;
+}
+
+nav menu li:hover {
+    scale: 1.05;
+}
+
+a {
+    color: rgb(200, 200, 255);
+    text-decoration: none;
+    border: solid 1px rgba(200, 200, 200);
+    border-radius: 8px;
+}
+
+main {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1%;
+    gap: 50px;
+    width: 80%;
+    border-radius: 20px;
+    background-color: #002f69;
+    color: rgb(200, 200, 200);
+    box-shadow: 5px 5px 5px rgb(0, 0, 0);
+}
+
+#habilidades {
+    display: flex;
+    flex-direction: column;
+    padding: 1%;
+    padding-right: 33%;
+    border: solid 1px;
+    border-radius: 15px;
+    background-color: rgb(15, 15, 20);
+    color: rgb(200, 200, 200);
+    box-shadow: 3px 5px 5px rgb(12, 12, 12);
+
+}
+
+#habilidades ul {
+    list-style-type: none;
+}
+
+#habilidades:hover {
+    scale: 0.995;
+}
+
+img {
+    max-width: 75px;
+}
+
+#projetos {
+    display: grid;
+    grid-template: repeat(auto-fit, 1fr)/repeat(auto-fill, 1fr);
+    width: 80%;
+    gap: 1%;
+}
+
+footer {
+    display: grid;
+    grid-template: repeat(auto-fit, 1fr) / repeat(auto-fit, 1fr);
+    padding: 1%;
+    background-color: rgb(30, 30, 40);
+    color: rgb(200, 200, 200);
+    width: 100%;
+    border-radius: 10px;
+}
