@@ -1,5 +1,5 @@
 * {
-    padding: 4px;
+    padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
@@ -12,14 +12,15 @@ html {
 
 body {
     display: flex;
-    flex-flow: column;
+    flex-direction: column;
     align-items: center;
     background-color: rgb(15, 15, 20);
+    gap: 1px;
 }
 
 header {
     display: flex;
-    flex-flow: column;
+    flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     width: 100%;
@@ -32,27 +33,29 @@ header {
 
 #profile-div {
     display: flex;
-    flex-flow: row;
+    flex-direction: row;
     justify-content: space-around;
     align-items: flex-start;
     width: 30%;
     height: 190px;
     min-width: 263.42px;
-    background-color: #003E8B;
-    border-radius: 50px;
+    background-color: #002858;
+    border-radius: 30px;
     padding: 1%;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.541);
 }
-#gh-profile{
+
+#gh-profile {
     display: flex;
-    flex-flow: column;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 
-img{
+img {
     border-radius: 40%;
 }
+
 img {
     max-width: 75px;
 }
@@ -61,38 +64,41 @@ img {
     color: rgb(200, 200, 200);
     text-decoration: none;
     border-radius: 8px;
-    background-color: rgba(30,30,40);
-    box-shadow: 1px, 1px 1px rgba(0,0,0);
+    background-color: rgba(30, 30, 40);
+    box-shadow: 1px, 1px 1px rgba(0, 0, 0);
+    padding: 1%;
 }
-#gh-profile a:hover{
+
+#gh-profile a:hover {
     border: solid 1px;
 }
 
 main {
     display: flex;
-    flex-flow: column wrap;
-    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
     padding: 1%;
     gap: 50px;
     width: 80%;
-    height: 100%;
     border-radius: 20px;
-    background-color: #002f69;
+    background-color: #002858;
     color: rgb(200, 200, 200);
     box-shadow: 5px 5px 5px rgb(0, 0, 0);
+    padding: 1%;
 }
 
-#intro{
+#intro {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgba(30,30,40);
+    background-color: rgba(30, 30, 40);
     border-radius: 17px;
+    padding: 1%;
 }
 
-#habilidades {
+#habilidades-list {
     display: flex;
     flex-direction: column;
     padding: 1%;
@@ -102,50 +108,63 @@ main {
     background-color: rgb(15, 15, 20);
     color: rgb(200, 200, 200);
     box-shadow: 3px 5px 5px rgb(12, 12, 12);
-
 }
-#habilidades ul {
+
+#habilidades-list ul {
     list-style-type: none;
 }
-#habilidades:hover {
+
+#habilidades-list:hover {
     scale: 0.995;
 }
 
-#projetos-title{
-    display: flex;
-    width: 80%;
+#projetos-container {
+    display: grid;
+    grid-template:1fr 2fr / repeat(auto-fit, 1fr) ;
+    width: 75%;
     background-color: rgb(30, 30, 40);
     border-radius: 10px;
+    gap: 2%;
+    padding: 1%;
 }
 
 #projetos {
-    display: grid;
-    grid-template-columns:1fr 1fr 1fr;
-    width: 80%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: space-evenly;
+    width: 100%;
     gap: 2%;
 }
-.card{
+
+.card {
     display: flex;
-    flex-flow: column;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
-    background-color: rgb(30, 30, 40);
-    min-height: 100px;
+    min-width: 250px;
+    background-color: rgb(50, 50, 60);
     border-radius: 20px;
-}
-.card:hover{
-    scale:1.03;
+    padding: 1%;
 }
 
-.card a{
+.card:hover {
+    scale: 1.03;
+}
+
+.card a {
     color: rgba(200, 200, 200, 0.993);
     text-decoration: none;
-    border-radius: 8px;
-    background-color: #002f69;
-    box-shadow: 1px, 1px 1px rgba(0,0,0);
+    border-radius: 4px;
+    background-color: rgb(30, 30, 40);
+    box-shadow: 1px, 1px 1px rgba(0, 0, 0);
+    padding: 1%;
 }
-.card a:hover{
-    border: solid 1px rgb(200,200,200);
+
+.card a:hover {
+    border: solid 1px rgb(200, 200, 200);
+    background-color: #002f69;
 }
 
 footer {
@@ -157,4 +176,5 @@ footer {
     color: rgb(200, 200, 200);
     width: 100%;
     border-radius: 10px;
+    padding: 1%;
 }
