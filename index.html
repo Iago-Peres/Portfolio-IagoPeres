@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portifólio-IagoPeres</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.7.1.min.js" defer></script>
+    <script src="js/GithubFetch-API.js" defer></script>
+    <script src="js/slideScript.js" defer></script>
 </head>
+
 <body>
     <header class="cabecalho">
         <h1>Portifólio</h1>
@@ -36,15 +41,14 @@
             </ul>
         </section>
         <div id="projetos-container">
-            <h2>Projetos</h2>
+            <h2 id="projetos-colapse">Projetos <img id="collapse-img" src="imgs/collapse.png"
+                    alt="seta colapse para cima"></h2>
             <section id="projetos"></section>
         </div>
     </main>
     <footer id="rodape">
         <p>Todos os direitos reservados &copy; 2024 Iago Peres</p>
     </footer>
-    <script src="js/jquery-3.7.1.min.js" defer></script>
-    <script src="js/GithubFetch-API.js" defer></script>
-    <script src="js/slideScript.js" defer></script>
 </body>
+
 </html>
