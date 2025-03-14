@@ -69,11 +69,13 @@ img {
     border-radius: 8px;
     background-color: rgba(30, 30, 40);
     box-shadow: 1px, 1px 1px rgba(0, 0, 0);
-    padding: 5%;
+    padding: 10%;
+    gap: 10%;
 }
 
 #gh-profile a:hover {
-    border: solid 1px;
+    background-color: #002f69;
+    text-decoration: underline;
 }
 
 main {
@@ -83,7 +85,9 @@ main {
     align-items: center;
     padding: 1%;
     gap: 50px;
-    width: 80%;
+    width: 90%;
+    height: 100%;
+    min-height: fit-content;
     border-radius: 20px;
     background-color: rgb(50, 50, 60);
     color: rgb(200, 200, 200);
@@ -149,10 +153,11 @@ main {
 
 .card {
     display: flex;
+    flex: 1;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    min-width: 250px;
+    justify-content: space-between;
+    align-items: baseline;
+    min-width: 10px;
     background-color: rgb(50, 50, 60);
     border-radius: 20px;
     padding: 1%;
@@ -161,6 +166,7 @@ main {
 
 .card:hover {
     scale: 1.01;
+    scale: 1.01;
 }
 
 .card a {
@@ -168,13 +174,13 @@ main {
     text-decoration: none;
     border-radius: 4px;
     background-color: rgb(30, 30, 40);
-    box-shadow: 1px, 1px 1px rgba(0, 0, 0);
-    padding: 1.5%;
+    box-shadow: 5px, 5px 5px rgba(0, 0, 0);
+    padding: 1.0%;
 }
 
 .card a:hover {
-    border: solid 1px rgb(200, 200, 200);
     background-color: #002f69;
+    text-decoration: underline;
 }
 
 footer {
